@@ -9,13 +9,16 @@ interface Props {
 }
 
 function Navbar(props:Props) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const goLogin = () => {
-    navigate(`/${PublicRoutes.LOGIN}`, { replace: true });
+    // navigate(`/${PublicRoutes.LOGIN}`, { replace: true });
+    console.log("btn ir a LOGIN ")
+
   }
   const goLanding = () => {
-    navigate(`/${PublicRoutes.LANDING}`, { replace: true });
+    // navigate(`/${PublicRoutes.LANDING}`, { replace: true });
+    console.log("btn ir a LANDING ")
   }
   const btnLogIn = () => {
     return(<button className='buttonLogIn' onClick={goLogin}>LOG IN</button>)
