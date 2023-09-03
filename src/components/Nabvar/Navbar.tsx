@@ -31,10 +31,10 @@ function Navbar(props:Props) {
   return (
     <div className="NavbarContainer">
       <div className="elementNavbar containerLogo">
-        <img className="mushroomLogo" src={MushroomLogo} />
+        {/* <img className="mushroomLogo" src={MushroomLogo} /> */}
       </div>
       <div className="elementNavbar containerCompanyName">
-        <h2 className="companyNameText">PORTEALBO</h2>
+        <h2 className="companyNameText">Confraternidad carcelaria</h2>
       </div>
       <div className='elementNavbar containerButtonLogIn'>
         {props.isLoggedIn ? btnBack() : btnLogIn()}
